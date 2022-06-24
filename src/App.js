@@ -1,18 +1,22 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
-import Conditional from './Components/Conditional'
-import MailBox from './Components/MailBox';
-import LoggedIn from './Components/LoggedIn';
-import Form from './Components/Form';
-import APIData from './Components/APIData';
+import AddData from './Components/AddData';
+import GetData from './Components/GetData';
+import UpdateData from './Components/UpdateData';
 function App() {
+  
+  const [display, setDisplay] = useState(false)
+  useEffect(() => {
+    if(window.location.href.includes("update")){
+      setDisplay(true)
+    }else{
+      setDisplay(false)
+    }
+  },[])
+  
   return (
     <div className="App">
-     {/* <Conditional/> */}
-     {/* <MailBox/> */}
-     {/* <LoggedIn/> */}
-     {/* <Form/> */}
-     <APIData/>
+     <GetData/>
     </div>
   );
 }
