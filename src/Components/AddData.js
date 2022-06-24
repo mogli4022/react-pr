@@ -24,6 +24,7 @@ function AddData() {
         .catch((e) => {
             console.log("add  error", e);
         })
+        window.location.reload();
     }
 
     return ( 

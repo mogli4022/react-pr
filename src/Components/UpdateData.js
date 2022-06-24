@@ -23,6 +23,7 @@ function UpdateData(props) {
         .catch((e)=> {
             console.log(e);
         })
+        window.location.reload();
     }
 
     return ( 

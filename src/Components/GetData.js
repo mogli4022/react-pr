@@ -26,6 +26,7 @@ function GetData() {
         .catch((e) => {
             console.log(e);
         })
+        window.location.reload();
     }
     const handleUpdate = (id) => {
         setDisplay(true)
