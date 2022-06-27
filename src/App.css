@@ -1,4 +1,4 @@
-body{
+/* body{
   background-color: antiquewhite;
 }
 .App {
@@ -23,4 +23,59 @@ body{
   font-size: 15px;
   font-weight: 900;
   background-color: whitesmoke;
+} */
+
+/* todo app css - start */
+
+body{
+  background-color: #352f5b;
 }
+
+.container{
+  max-width: 450px;
+}
+
+input[type=text],
+input[type=text]:focus{
+  color: black;
+  border: none;
+  background: white;
+}
+
+li.list-group-item{
+  background-color: #423a6f;
+  color: #F8F9FA;
+}
+
+.delete{
+  cursor: pointer;
+}
+
+label.add{
+  margin-bottom: 15px;
+  color: white;
+  margin: 30px;
+}
+
+.filtred{
+  display: none !important;
+}
+
+.form-add{
+  margin-bottom: 30px;
+}
+
+.todo-list-division{
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit{
+  padding: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.fa-trash-alt{
+  margin-left: 15px;
+}
+/* todo app css - end */
